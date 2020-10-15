@@ -1,0 +1,118 @@
+.cart-wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.cart-card {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  .picture {
+    width: 80px;
+    margin-right: 30px;
+  }
+
+  .info {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .delete {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      cursor: pointer;
+    }
+
+    .delete:hover {
+      color: red;
+    }
+
+    .title-card {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .props {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+    .counter {
+      display: flex;
+      align-items: center;
+
+      .minus,
+      .plus {
+        cursor: pointer;
+      }
+
+      .count-pizzas {
+        width: 50px;
+        padding: 3px;
+        margin: 0 15px;
+        text-align: center;
+      }
+    }
+
+    .price-one-card {
+      background-color: #64ddbb;
+      border: 1px solid #7bb0a6;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 18px;
+      color: #7e3661;
+      font-weight: bold;
+    }
+  }
+}
+
+.price-all-wrap {
+  width: 100%;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: flex-end;
+
+  .price-all {
+    font-size: 20px;
+    background-color: #fcb941;
+    border: 1px solid #eb9532;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    span {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+}
+
+.cart-wrap-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}

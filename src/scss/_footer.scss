@@ -1,0 +1,39 @@
+footer.footer {
+  background-color: #112233;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .copy {
+    color: rgb(216, 216, 216);
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    color: rgb(216, 216, 216);
+
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+
+      .material-icons {
+        color: lightseagreen;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .author {
+    text-align: right;
+    color: rgb(216, 216, 216);
+
+    a {
+      display: inline-block;
+      color: #ce0094;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import 'material-icons/iconfont/material-icons.scss';
+
+@import './header';
+@import './variables';
+@import './menu';
+@import './content';
+@import './card-pizza';
+@import './footer';
+@import './cart';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  padding: 30px;
+  background: #ffdf8c;
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  max-width: 1170px;
+  border-radius: 20px;
+  overflow: hidden;
+}
