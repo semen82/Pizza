@@ -1,0 +1,85 @@
+{
+  "pizzas": [
+    {
+      "id": 0,
+      "name": "Пепперони Фреш с томатами",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/a386dd626cab472db3238bf88b1313cb_584x584.jpeg",
+      "categories": ["Вегитарианские", "Сырные"],
+      "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, томатный соус",
+      "price": 90,
+      "popular": 27
+    },
+    {
+      "id": 1,
+      "name": "Сырная",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/bbecece9-ffba-4372-85f6-b9171131900a.jpg",
+      "categories": ["Сырные"],
+      "description": "Увеличенная порция моцареллы, томатный соус",
+      "price": 90,
+      "popular": 43
+    },
+    {
+      "id": 2,
+      "name": "Ветчина и сыр",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/65f40f94-8181-4042-ae2c-10cd31c0a178.jpg",
+      "categories": ["Сырные", "Мясные"],
+      "description": "Ветчина, увеличенная порция моцареллы, соус альфредо",
+      "price": 105,
+      "popular": 12
+    },
+    {
+      "id": 3,
+      "name": "Кисло-сладкий цыпленок",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/8a6154d5-d486-4b24-ab25-4078a8244cc0.jpg",
+      "categories": ["Сырные", "Мясные"],
+      "description": "Цыпленок, томатный соус, моцарелла, кисло-сладкий соус",
+      "price": 105,
+      "popular": 7
+    },
+    {
+      "id": 4,
+      "name": "Ветчина и грибы",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/08836aa27a9247f09f53bba3108471bf_584x584.jpeg",
+      "categories": ["Сырные", "Мясные"],
+      "description": "Ветчина, шампиньоны, увеличенная порция моцареллы, томатный соус",
+      "price": 125,
+      "popular": 27
+    },
+    {
+      "id": 5,
+      "name": "Пепперони",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/523c10a1-464d-41ad-9d28-f414a009ae22.jpg",
+      "categories": ["Сырные", "Вегитарианские"],
+      "description": "Пикантная пепперони, увеличенная порция моцареллы, томатный соус",
+      "price": 140,
+      "popular": 31
+    },
+    {
+      "id": 6,
+      "name": "Чизбургер-пицца",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/9763da8d31b64427bd4d75dbfe19038b_584x584.jpeg",
+      "categories": ["Сырные", "Вегитарианские"],
+      "description": "Мясной соус болоньезе, моцарелла, красный лук, соленые огурчики, томаты, соус бургер",
+      "price": 140,
+      "popular": 31
+    },
+    {
+      "id": 7,
+      "name": "Мексиканская",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/0777b9cf-c854-42e5-87b8-f6988f31cfac.jpg",
+      "categories": ["Острые", "Мясные"],
+      "description": "Острый цыпленок, томатный соус, сладкий перец, красный лук, моцарелла, острый перец халапеньо, томаты, соус сальса",
+      "price": 160,
+      "popular": 31
+    },
+    {
+      "id": 8,
+      "name": "Четыре сыра",
+      "imageUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/1ad812ec-6a90-4eb8-b5e6-02d688487874.jpg",
+      "categories": ["Сырные"],
+      "description": "Увеличенная порция моцареллы, смесь сыров чеддер и пармезан, сыр блю чиз, сливочный соус",
+      "price": 160,
+      "popular": 35
+    }
+  ]
+}

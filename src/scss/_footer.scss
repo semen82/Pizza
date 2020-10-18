@@ -9,23 +9,6 @@ footer.footer {
     color: rgb(216, 216, 216);
   }
 
-  .social {
-    display: flex;
-    flex-direction: column;
-    color: rgb(216, 216, 216);
-
-    .icons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 15px;
-
-      .material-icons {
-        color: lightseagreen;
-        cursor: pointer;
-      }
-    }
-  }
-
   .author {
     text-align: right;
     color: rgb(216, 216, 216);

@@ -1,27 +1,63 @@
 import React from 'react';
 
-function Menu() {
+import { useDispatch, useSelector } from 'react-redux';
+import { setActiveCategory, setActiveSortItem } from '../redux/menuReducer';
+
+const Menu = () => {
+  const { categories, sortItems, activeCategory, activeSortItem } = useSelector(
+    (state) => state.menu
+  );
+
+  const [sortPopupVisible, setSortPopupVisible] = React.useState(false);
+  const dispatch = useDispatch();
+
+  const onClickCategory = (name) => dispatch(setActiveCategory(name));
+
+  const onSortPopup = () => {
+    setSortPopupVisible(!sortPopupVisible);
+  };
+
+  const onActiveSortItem = (item) => {
+    dispatch(setActiveSortItem(item));
+    setSortPopupVisible(false);
+  };
+
   return (
     <div className="menu-wrap">
       <ul className="categories">
-        <li>Все</li>
-        <li className="active">Мясные</li>
-        <li>Сырные</li>
-        <li>Острые</li>
-        <li>Вегитарианские</li>
-        <li>Гриль</li>
+        {categories.map((name, index) => {
+          return (
+            <li
+              key={`${name}_${index}`}
+              className={name === activeCategory ? 'active' : ''}
+              onClick={() => onClickCategory(name)}>
+              {name}
+            </li>
+          );
+        })}
       </ul>
       <div className="sort-wrap">
-        <span className="label">Сортировать</span>
-        <span className="sort">Популярность</span>
-        <ul className="sort-list">
-          <li className="active">Популярность</li>
-          <li>Цена</li>
-          <li>Название</li>
-        </ul>
+        <span className={sortPopupVisible ? 'label visible' : 'label'}>
+          Сортировать
+        </span>
+        <span className="sort" onClick={onSortPopup}>
+          {activeSortItem}
+        </span>
+        {sortPopupVisible && (
+          <ul className="sort-list">
+            {sortItems.map((item, index) => (
+              <li
+                key={`${item}_${index}`}
+                className={activeSortItem === item ? 'active' : null}
+                onClick={() => onActiveSortItem(item)}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
-}
+};
 
 export default Menu;

@@ -11,7 +11,7 @@
   }
 }
 
-.cart-card {
+.cart-item-block {
   width: 100%;
   padding: 15px;
   display: flex;
@@ -55,11 +55,18 @@
       display: flex;
       flex-direction: column;
       font-size: 14px;
+
+      .type span,
+      .size span {
+        font-weight: bold;
+        margin-left: 20px;
+      }
     }
 
     .counter {
       display: flex;
       align-items: center;
+      user-select: none;
 
       .minus,
       .plus {
