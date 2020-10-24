@@ -1,6 +1,6 @@
 .pizza-card {
   min-width: 220px;
-  max-width: 320px;
+  max-width: 300px;
   width: 30%;
   flex-grow: 1;
   display: flex;
@@ -25,6 +25,7 @@
   .content-card {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     .title-card {
       font-size: 20px;

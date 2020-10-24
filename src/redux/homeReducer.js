@@ -1,4 +1,5 @@
 const DOWNLOAD_PIZZAS = 'DOWNLOAD_PIZZAS';
+const CLEAR_PIZZAS = 'CLEAR_PIZZAS';
 const SET_PRELOADER = 'SET_PRELOADER';
 
 const initialState = {
@@ -11,7 +12,13 @@ const homeReducer = (state = initialState, action) => {
     case DOWNLOAD_PIZZAS:
       return {
         ...state,
-        pizzas: [...state.pizzas, action.pizzas]
+        pizzas: [...state.pizzas, action.pizza]
+      };
+
+    case CLEAR_PIZZAS:
+      return {
+        ...state,
+        pizzas: []
       };
 
     case SET_PRELOADER:
@@ -25,8 +32,12 @@ const homeReducer = (state = initialState, action) => {
   }
 };
 
-export const downloadPizzas = (pizzas) => {
-  return { type: DOWNLOAD_PIZZAS, pizzas };
+export const downloadPizzasHome = (pizza) => {
+  return { type: DOWNLOAD_PIZZAS, pizza };
+};
+
+export const clearPizzasHome = () => {
+  return { type: CLEAR_PIZZAS };
 };
 
 export const setPreloader = (boole) => {

@@ -2,11 +2,13 @@ import { createStore, combineReducers } from 'redux';
 import menuReducer from './menuReducer';
 import homeReducer from './homeReducer';
 import cartReducer from './cartReducer';
+import adminReducer from './adminReducer';
 
 const reducer = combineReducers({
   menu: menuReducer,
   home: homeReducer,
-  cart: cartReducer
+  cart: cartReducer,
+  admin: adminReducer
 });
 
 const store = createStore(

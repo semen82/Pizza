@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addPizzaToCart } from '../redux/cartReducer';
 
 const PizzaBlock = React.memo(
-  ({ name, imageUrl, description, price, popular, id }) => {
+  ({ name, imageUrl, description, price, popular, id, imagePathUrl }) => {
     const sizes = ['Маленькая', 'Средняя', 'Большая'];
     const types = ['Традиционное', 'Тонкое'];
 
@@ -56,7 +56,7 @@ const PizzaBlock = React.memo(
 
     return (
       <div className="pizza-card">
-        <img src={imageUrl} alt="Картинка пиццы" className="picture" />
+        <img src={imagePathUrl} alt="Картинка пиццы" className="picture" />
         <div className="content-card">
           <h3 className="title-card">{name}</h3>
           <span className="description-card">{description}</span>

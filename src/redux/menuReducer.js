@@ -2,7 +2,7 @@ const SET_ACTIVE_CATEGORY = 'SET_ACTIVE_CATEGIRY';
 const SET_ACTIVE_SORT_ITEM = 'SET_ACTIVE_SORT_ITEM';
 
 const initialState = {
-  categories: ['Все', 'Мясные', 'Сырные', 'Острые', 'Вегитарианские', 'Гриль'],
+  categories: ['Все', 'Мясные', 'Сырные', 'Острые', 'Вегитарианские'],
   sortItems: ['Популярность', 'Цена', 'Название'],
   activeCategory: 'Все',
   activeSortItem: 'Популярность'

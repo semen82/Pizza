@@ -7,6 +7,10 @@
   flex-grow: 1;
   position: relative;
 
+  &.admin {
+    padding: 0;
+  }
+
   .title {
     background-color: rgb(216, 216, 216);
     padding: 5px 20px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 
 import logo from '../assets/images/pizza-icon.png';
 import { calculation } from '../libs/functions';
@@ -10,6 +10,11 @@ const Header = () => {
 
   return (
     <div className="header">
+      <Route exact path="/">
+        <NavLink to="/admin" className="go-to-admin">
+          admin
+        </NavLink>
+      </Route>
       <NavLink to="/" className="name-site">
         <img src={logo} alt="Логотип сайта" className="logo" />
         <div>
@@ -17,13 +22,15 @@ const Header = () => {
           <span className="description">Самая вкусная пицца на свете</span>
         </div>
       </NavLink>
-      <NavLink to="cart" className="right">
-        <span className="summ">{calculation(cartItems)} Грн</span>
-        <div className="cart-icon">
-          <span className="material-icons icon"> shopping_cart </span>
-          <span className="count-pizzas">{cartItems.length}</span>
-        </div>
-      </NavLink>
+      <Route exact path="/">
+        <NavLink to="cart" className="right">
+          <span className="summ">{calculation(cartItems)} Грн</span>
+          <div className="cart-icon">
+            <span className="material-icons icon"> shopping_cart </span>
+            <span className="count-pizzas">{cartItems.length}</span>
+          </div>
+        </NavLink>
+      </Route>
     </div>
   );
 };
